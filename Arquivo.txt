@@ -1,0 +1,65 @@
+programa{
+  funcao inicio(){
+    inteiro opc=0
+    real valortot=0.0, quant=0.0
+    cadeia nome
+    escreva ("Bem-vindo(a) a lanhonete mary´s \n")
+    escreva ("Qual seu nome?  \n")
+    leia (nome)
+   
+    faca{
+      escreva("1)  X-salada R$15,00 \n")
+      escreva("2)   R$18,00 \n")      
+      escreva("3)   R$20,00 \n")
+      escreva("4)   R$5,00 \n")
+      escreva("5)   Para finalizar \n")
+      escreva("Digite a opção: ")
+      leia(opc)
+ 
+
+
+
+
+      escolha(opc)      {
+
+
+
+
+        caso 1:
+        escreva("Digite a quantidade do item:")
+        leia(quant)
+          valortot = (valortot + 15 * quant)
+        pare
+       
+        caso 2:
+        escreva("Digite a quantidade do item:")
+        leia(quant)
+          valortot = (valortot + 18 * quant)
+        pare
+       
+        caso 3:
+        escreva("Digite a quantidade do item:")
+        leia(quant)
+          valortot = (valortot + 20 * quant)
+        pare
+       
+        caso 4:
+        escreva("Digite a quantidade do item:")
+        leia(quant)
+          valortot = (valortot + 5 * quant)
+        pare
+
+        caso 5:
+          escreva("Sr(a) ",nome, ", o valor total do seu pedido foi de ", valortot, "R$")
+        pare
+
+        caso contrario:
+          escreva("Informação incorreta \n")
+      }      
+    }enquanto(opc != 5)
+
+    }
+  }
+}
+
+
